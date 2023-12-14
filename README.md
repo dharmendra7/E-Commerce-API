@@ -11,7 +11,7 @@
 
 ### Introduction
 
-- Supports latest version of Python i.e. Python 3.11.1  along with Django 4.2.5 :zap:
+- Supports latest version of Python i.e. Python 3.11.3  along with Django 5.0 :zap:
 - This is a simple E-commerce API built using Django Rest Framework. It allows you to manage customers, orders, and products.
 
 ### Prerequisites

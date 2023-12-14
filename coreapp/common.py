@@ -7,5 +7,10 @@ def send_response(request, message, data):
 
 def send_response_validation(request, code, message):
     response = JsonResponse(data={"message": message})
-    response.status_code = 200
+    response.status_code = code
     return response
+
+def error_400(request, message):
+    response = JsonResponse(data={'message': message})
+    response.status_code = 400
+    return response 

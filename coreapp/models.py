@@ -7,13 +7,20 @@ class User(AbstractUser):
     email = models.EmailField(unique=True)
     contact_number = models.CharField(max_length=10)
     name = models.CharField(max_length=255, unique=True)
+    username = models.CharField(max_length=30, unique=True, null=True)
     # USERNAME_FIELD = 'email'
     # REQUIRED_FIELDS = ['username']
+
+    def __str__(self):
+        return self.name
 
 
 class Product(models.Model):
     name = models.CharField(max_length=255, unique=True)
     weight = models.DecimalField(max_digits=5, decimal_places=2, validators=[MinValueValidator(0), MaxValueValidator(25)])
+
+    def __str__(self):
+        return self.name
 
 
 class Order(models.Model):

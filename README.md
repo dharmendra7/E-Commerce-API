@@ -7,8 +7,7 @@
 - [Prerequisites](#prerequisites)
 - [Features](#features)
 - [Installation](#installation)
-- [For client use](#for-client-use)
-- [Setup using docker](#setup-using-docker)
+- [API Endpoints](#api-endpoints)
 
 ### Introduction
 

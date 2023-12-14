@@ -77,10 +77,27 @@ python manage.py runserver
 
 ### API Endpoints
 
-> ##### 1. Customers
+> ### Customers
 
 -   List all customers: GET /api/get-customers/
 -   Create a new customer: POST /api/create-customer/
 -   Update an existing customer: PUT /api/update-customer/<id>/
+
+> ### Products
+
+-   List all products: GET /api/get-products/
+-   Create a new product: POST /api/create-product/
+
+> ### Products
+
+-   List all orders: GET /api/get-orders/
+-   Create a new order: POST /api/create-order/
+-   Edit an existing order: PUT /api/update-order/<id>/
+-   List orders based on products: GET /api/get-order-by-name/?products=Book,Pen
+-   List orders based on the customer: GET /api/get-order-by-customer-name/?customer=Sam
+
+Orders:
+
+
 
 <br />
